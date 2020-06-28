@@ -1,12 +1,13 @@
 <template>
     <div class="area">
         <v-container fluid style="height: 100vh;"
-                     class="elevation-6">
+                     class="elevation-6"
+        >
             <v-container fluid fill-height grid-list-xl>
                 <v-layout row wrap align-center>
                     <v-flex xs8 md5 text-xs-center style="text-align: right; z-index: 2;">
-                        <h1 class="display-2 mb-2">Fullstack Web and Software Developer</h1>
-                        <h2>
+                        <h1 class="display-2 mb-2" style="color: white;">Fullstack Web and Software Developer</h1>
+                        <h2 style="color: white;">
                             1 year web development experience
                             <em style="display:block;font-size:1rem;">- VueJS, ReactJS, Vuetify, Bootstrap, Bulma
                                 <br/>
@@ -25,8 +26,8 @@
                     </v-flex>
                     <v-flex xs8 md3 text-xs-center class="d-none d-lg-none d-xl-inline"
                             style="text-align: left; z-index: 2;">
-                        <h1 class="display-2 mb-3">More Information about me</h1>
-                        <h3>
+                        <h1 class="display-2 mb-3" style="color: white;">More Information about me</h1>
+                        <h3 style="color: white;">
                             Age: 14<br/>
                             Gender: Male <br/>
                         </h3>
@@ -95,7 +96,7 @@
         height: 20px;
         background: rgba(255, 255, 255, 0.3);
         animation: animate 15s linear infinite;
-        bottom: 80vh;
+        bottom: 77vh;
 
     }
 
@@ -107,7 +108,7 @@
         height: 20px;
         background: rgba(255, 255, 255, 0.3);
         animation: animate-2 15s linear infinite;
-        top: -20vh;
+        top: -23vh;
     }
 
     .circles li:nth-child(1) {
@@ -225,7 +226,7 @@
         }
 
         100% {
-            transform: translateY(120vh) rotate(720deg);
+            transform: translateY(140vh) rotate(720deg);
             opacity: 0;
             border-radius: 100%;
         }

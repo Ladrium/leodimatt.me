@@ -1,22 +1,22 @@
 <template>
     <v-app>
         <Navbar/>
-
         <Main/>
         <v-container>
-            <v-container grid-list-xl>
+            <v-container grid-list-xl style="margin-top: 2rem;">
                 <v-layout wrap>
                     <v-flex
                             v-for="(project, i) in projects"
                             :key="i"
                             xs12
                             sm4
-                            lg3>
+                            lg3
+                            :data-oas="project.data">
                         <Project class="p-card" :name="project.name" :url="project.url"
                                  :description="project.description"
                                  :tags="project.tags"
                                  :image="project.image"
-                                 data-oas="fade"/>
+                                 :data="project.data"/>
                     </v-flex>
                 </v-layout>
             </v-container>
@@ -60,8 +60,8 @@
                     data: "zoom-out-left"
                 }]
         }),
-        created() {
-            // eslint-disable-next-line no-undef
+        mounted() {
+            /*eslint-disable */
             AOS.init();
         },
         components: {
@@ -74,22 +74,13 @@
 <style>
     @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
+    html {
+        scroll-behavior: smooth;
+    }
+
+
     #app {
         height: 200vh;
         font-family: Exo, "sans-serif";
-    }
-
-    .p-card {
-        opacity: .8;
-        transition: .5s !important;
-    }
-
-    .p-card:hover {
-        transform: scale(1.05);
-        opacity: 1;
-    }
-
-    .p-card:hover .v-image {
-        max-height: 100% !important;
     }
 </style>

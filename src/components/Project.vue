@@ -1,5 +1,5 @@
 <template>
-    <v-card dark :href="url" class="p-card">
+    <v-card dark :href="url" class="p-card" :data-aos="data" data-aos-duration="5000">
         <v-card-title>{{ name }}</v-card-title>
         <v-card-subtitle>{{ description }}</v-card-subtitle>
         <v-img :src="image" style="max-height: 300px;" v-if="image"/>
@@ -19,8 +19,29 @@
     </v-card>
 </template>
 <script>
+    import AOS from 'aos';
+    import 'aos/dist/aos.css';
+
     export default {
         name: "Project",
-        props: ["name", "url", "image", "description", "tags"]
+        props: ["name", "url", "image", "description", "tags", "data"],
+        created() {
+            AOS.init();
+        }
     }
 </script>
+<style>
+    .p-card {
+        background: #0369ff !important;
+        transition: .5s !important;
+    }
+
+    .p-card:hover {
+        transform: scale(1.05);
+        background: #304FFE !important;
+    }
+
+    .p-card:hover .v-image {
+        max-height: 100% !important;
+    }
+</style>

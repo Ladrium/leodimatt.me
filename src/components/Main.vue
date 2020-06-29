@@ -5,9 +5,9 @@
         >
             <v-container fluid fill-height grid-list-xl>
                 <v-layout row wrap align-center>
-                    <v-flex xs8 md5 text-xs-center style="text-align: right; z-index: 2;">
-                        <h1 class="display-2 mb-2" style="color: white;">Fullstack Web and Software Developer</h1>
-                        <h2 style="color: white;">
+                    <v-flex xs8 md5 text-xs-center style="text-align: right; z-index: 2;" >
+                        <h1 class="display-2 mb-2" style="color: white;" data-aos="fade-right" data-aos-delay="200">Fullstack Web and Software Developer</h1>
+                        <h2 style="color: white;" data-aos="fade-right" data-aos-delay="500">
                             1 year web development experience
                             <em style="display:block;font-size:1rem;">- VueJS, ReactJS, Vuetify, Bootstrap, Bulma
                                 <br/>
@@ -17,6 +17,8 @@
                     <v-flex xs12 md2 text-xs-center my-4 d-none d-sm-none d-md-flex style=" z-index: 2;">
                         <transition>
                             <v-avatar
+                                    data-aos="flip-up"
+                                    data-aos-duration="1000"
                                     class="grey lighten-4"
                                     size="300"
                             >
@@ -26,8 +28,8 @@
                     </v-flex>
                     <v-flex xs8 md3 text-xs-center class="d-none d-lg-none d-xl-inline"
                             style="text-align: left; z-index: 2;">
-                        <h1 class="display-2 mb-3" style="color: white;">More Information about me</h1>
-                        <h3 style="color: white;">
+                        <h1 class="display-2 mb-3" style="color: white;" data-aos="fade-left" data-aos-delay="200">More Information about me</h1>
+                        <h3 style="color: white;" data-aos="fade-left" data-aos-delay="500">
                             Age: 14<br/>
                             Gender: Male <br/>
                         </h3>
@@ -68,8 +70,15 @@
     </div>
 </template>
 <script>
+    import AOS from 'aos';
+    import 'aos/dist/aos.css';
+
     export default {
-        name: "Main"
+        name: "Main",
+        created() {
+            // eslint-disable-line no-undef
+            AOS.init();
+        }
     }
 </script>
 <style>

@@ -8,10 +8,7 @@
 
 <script>
 export default {
-    name: "Footer",
-    data: () => ({
-        icons: ["mdi-instagram"]
-    })
+    name: "Footer"
 }
 </script>
 <style scoped>

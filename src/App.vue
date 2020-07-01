@@ -82,10 +82,11 @@
 
     body {
         overflow-x: hidden !important;
+
     }
 
     #app {
-        height: 200vh;
+        min-height: 200vh;
         font-family: Exo, "sans-serif";
     }
 </style>

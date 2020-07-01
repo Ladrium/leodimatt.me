@@ -1,5 +1,5 @@
 <template>
-    <v-app>
+    <v-app style="overflow: hidden;">
         <Navbar/>
         <Main/>
         <v-container>
@@ -21,6 +21,7 @@
                 </v-layout>
             </v-container>
         </v-container>
+        <Footer/>
     </v-app>
 </template>
 
@@ -67,7 +68,8 @@
         components: {
             Project: () => import("./components/Project"),
             Main: () => import("./components/Main"),
-            Navbar: () => import("./components/Navbar")
+            Navbar: () => import("./components/Navbar"),
+            Footer: () => import("./components/Footer")
         }
     };
 </script>
@@ -78,6 +80,9 @@
         scroll-behavior: smooth;
     }
 
+    body {
+        overflow-x: hidden !important;
+    }
 
     #app {
         height: 200vh;

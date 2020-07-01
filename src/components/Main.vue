@@ -3,13 +3,25 @@
         <v-container fluid style="height: 100vh;"
                      class="elevation-6"
         >
+
             <v-container fluid fill-height grid-list-xl>
-                <v-layout row wrap align-center>
-                    <v-flex xs8 md5 text-xs-center style="text-align: right; z-index: 2;" >
+                <v-layout align-center ro class="d-block d-sm-block d-md-none" style="text-align: right; margin-top: 20%;">
+                    <v-flex text-xs-center>
                         <h1 class="display-2 mb-2" style="color: white;" data-aos="fade-right" data-aos-delay="200">Fullstack Web and Software Developer</h1>
                         <h2 style="color: white;" data-aos="fade-right" data-aos-delay="500">
                             1 year web development experience
-                            <em style="display:block;font-size:1rem;">- VueJS, ReactJS, Vuetify, Bootstrap, Bulma
+                            <em style="display: block; font-size: 1rem;">- VueJS, ReactJS, Vuetify, Bootstrap, Bulma
+                            <br/>
+                            - Python, HTML, CSS, JavaScript, TypeScript, Java, Rust</em>
+                        </h2>
+                    </v-flex>
+                </v-layout>
+                <v-layout row wrap align-center>
+                    <v-flex xs8 md5 text-xs-center style="text-align: right; z-index: 2;" class="d-none d-sm-none d-md-block">
+                        <h1 class="display-2 mb-2" style="color: white;" data-aos="fade-right" data-aos-delay="200">Fullstack Web and Software Developer</h1>
+                        <h2 style="color: white;" data-aos="fade-right" data-aos-delay="500">
+                            1 year web development experience
+                            <em style="display:block; font-size:1rem;">- VueJS, ReactJS, Vuetify, Bootstrap, Bulma
                                 <br/>
                                 - Python, HTML, CSS, JavaScript, TypeScript, Java, Rust</em>
                         </h2>

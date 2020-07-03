@@ -12,7 +12,7 @@
                             sm4
                             lg3
                             :data-oas="project.data">
-                        <Project class="p-card" :name="project.name" :url="project.url"
+                        <Project class="p-card" style="z-index: 10;" :name="project.name" :url="project.url"
                                  :description="project.description"
                                  :tags="project.tags"
                                  :image="project.image"

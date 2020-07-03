@@ -1,24 +1,27 @@
 <template>
-    <div class="area">
+    <div class="area" id="area">
         <v-container fluid style="height: 100vh;"
                      class="elevation-6"
         >
 
             <v-container fluid fill-height grid-list-xl>
-                <v-layout align-center ro class="d-block d-sm-block d-md-none" style="text-align: right; margin-top: 20%;">
+                <v-layout align-center ro class="d-block d-sm-block d-md-none"
+                          style="text-align: right; margin-top: 20%;">
                     <v-flex text-xs-center>
-                        <h1 class="display-2 mb-2" style="color: white;" data-aos="fade-right" data-aos-delay="200">Fullstack Web and Software Developer</h1>
+                        <h1 class="display-2 mb-2" style="color: white;" data-aos="fade-right" data-aos-delay="200">
+                            Fullstack Web and Software Developer</h1>
                         <h2 style="color: white;" data-aos="fade-right" data-aos-delay="500">
                             1 year web development experience
                             <em style="display: block; font-size: 1rem;">- VueJS, ReactJS, Vuetify, Bootstrap, Bulma
-                            <br/>
-                            - Python, HTML, CSS, JavaScript, TypeScript, Java, Rust</em>
+                                <br/>
+                                - Python, HTML, CSS, JavaScript, TypeScript, Java, Rust</em>
                         </h2>
                     </v-flex>
                 </v-layout>
                 <v-layout row wrap align-center>
-                    <v-flex xs8 md5 text-xs-center style="text-align: right; z-index: 2;" class="d-none d-sm-none d-md-block">
-                        <h1 class="display-2 mb-2" style="color: white;" data-aos="fade-right" data-aos-delay="200">Fullstack Web and Software Developer</h1>
+                    <v-flex xs8 md5 text-xs-center style="text-align: right;" class="d-none d-sm-none d-md-block">
+                        <h1 class="display-2 mb-2" style="color: white;" data-aos="fade-right" data-aos-delay="200">
+                            Fullstack Web and Software Developer</h1>
                         <h2 style="color: white;" data-aos="fade-right" data-aos-delay="500">
                             1 year web development experience
                             <em style="display:block; font-size:1rem;">- VueJS, ReactJS, Vuetify, Bootstrap, Bulma
@@ -26,7 +29,7 @@
                                 - Python, HTML, CSS, JavaScript, TypeScript, Java, Rust</em>
                         </h2>
                     </v-flex>
-                    <v-flex xs12 md2 text-xs-center my-4 d-none d-sm-none d-md-flex style=" z-index: 2;">
+                    <v-flex xs12 md2 text-xs-center my-4 d-none d-sm-none d-md-flex>
                         <transition>
                             <v-avatar
                                     data-aos="flip-up"
@@ -39,8 +42,9 @@
                         </transition>
                     </v-flex>
                     <v-flex xs8 md3 text-xs-center class="d-none d-lg-none d-xl-inline"
-                            style="text-align: left; z-index: 2;">
-                        <h1 class="display-2 mb-3" style="color: white;" data-aos="fade-left" data-aos-delay="200">More Information about me</h1>
+                            style="text-align: left;">
+                        <h1 class="display-2 mb-3" style="color: white;" data-aos="fade-left" data-aos-delay="200">More
+                            Information about me</h1>
                         <h3 style="color: white;" data-aos="fade-left" data-aos-delay="500">
                             Age: 14<br/>
                             Gender: Male <br/>
@@ -101,6 +105,8 @@
     }
 
     .circles {
+        z-index: 3;
+        pointer-events: none;
         position: absolute;
         top: 0;
         left: 0;
@@ -117,7 +123,7 @@
         height: 20px;
         background: rgba(255, 255, 255, 0.3);
         animation: animate 15s linear infinite;
-        bottom: 77vh;
+        bottom: -10rem;
 
     }
 
@@ -129,7 +135,7 @@
         height: 20px;
         background: rgba(255, 255, 255, 0.3);
         animation: animate-2 15s linear infinite;
-        top: -23vh;
+        top: -10rem;
     }
 
     .circles li:nth-child(1) {
@@ -231,7 +237,7 @@
         }
 
         100% {
-            transform: translateY(-120vh) rotate(720deg);
+            transform: translateY(-200vh) rotate(720deg);
             opacity: 0;
             border-radius: 100%;
         }
@@ -247,7 +253,7 @@
         }
 
         100% {
-            transform: translateY(140vh) rotate(720deg);
+            transform: translateY(200vh) rotate(720deg);
             opacity: 0;
             border-radius: 100%;
         }

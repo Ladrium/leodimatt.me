@@ -86,6 +86,7 @@
     }
 
     #app {
+        background: #2C2F33;
         min-height: 200vh;
         font-family: Exo, "sans-serif";
     }
